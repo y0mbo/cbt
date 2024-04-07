@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassicBattletech;
 
-abstract class Unit
+public abstract class Unit
 {
-    public abstract string Name { get; }
+    public virtual string Name { get; }
+    public virtual int BattleValue { get; }
+
+    
 }
+

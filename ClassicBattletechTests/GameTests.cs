@@ -6,7 +6,7 @@ namespace ClassicBattletechTests;
 public class GameTests
 {
     [TestMethod]
-    public void TestGameConstructor()
+    public void Test_GameConstructor()
     {
         // arrange
         string gameName = "This is my game";
@@ -16,10 +16,11 @@ public class GameTests
 
         // assert
         Assert.AreEqual(gameName, game.Name);
+        Assert.AreEqual(1, game.Round);
     }
 
     [TestMethod]
-    public void TestGameStringTrimming()
+    public void Test_Game_StringTrimming()
     {
         string gameName = " Starts with a space";
         Game game = new Game(gameName);
@@ -29,4 +30,6 @@ public class GameTests
         game = new Game(gameName);
         Assert.AreEqual(gameName.Trim(), game.Name);
     }
+
+   
 }
