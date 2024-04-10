@@ -27,7 +27,7 @@ public class PlayerTests
 
         Assert.AreEqual(playerName, game.Players[0].Name);
     }
-
+        
     [TestMethod]
     public void Add_Player_to_Game_without_Name()
     {
@@ -37,7 +37,6 @@ public class PlayerTests
         game.AddPlayer();
  
         Assert.AreEqual("Player 1", game.Players[0].Name);
-        Assert.AreEqual("Player 2", game.Players[1].Name);
+        Assert.AreEqual("Player 2", game.Players[1].Name); 
      }
-
 }

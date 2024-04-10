@@ -31,4 +31,41 @@ public class Game
         Players.Add(new Player(name));
     }
 
+    public void StartGame()
+    {
+        if (Players.Count == 0)
+        {
+            throw new NoPlayersException("No players have been added to the game.");
+        }
+        
+        foreach(Player player in Players)
+        { 
+            if(player.Units.Count == 0)
+            {
+                throw new NoUnitsException("No units have been added for the players.");
+            }
+        }
+    }
+}
+
+public class NoPlayersException : Exception
+{
+    public NoPlayersException() 
+    {
+    }
+
+    public NoPlayersException(string message) : base(message)
+    {
+    }
+}
+
+public class NoUnitsException : Exception
+{
+    public NoUnitsException()
+    {
+    }
+
+    public NoUnitsException(string message) : base(message)
+    {
+    }
 }

@@ -31,5 +31,23 @@ public class GameTests
         Assert.AreEqual(gameName.Trim(), game.Name);
     }
 
-   
+    [TestMethod]
+    [ExpectedException(typeof(NoPlayersException), "No players have been added to the game.")]
+    public void Start_New_Game_Without_Players()
+    {
+        Game game = new Game("");
+        game.StartGame();       
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(NoUnitsException), "No units have been added to the game.")]
+    public void Start_New_Game_Without_Units()
+    {
+        Game game = new Game("");
+        game.AddPlayer();
+        game.AddPlayer();
+
+        game.StartGame();
+    }
+
 }
