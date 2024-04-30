@@ -1,6 +1,6 @@
-using ClassicBattletech;
+using AssaultSimulator;
 
-namespace ClassicBattletechTests;
+namespace AssaultSimulatorTests;
 
 [TestClass]
 public class UnitTests
@@ -13,5 +13,8 @@ public class UnitTests
         Player player = game.Players[0];
 
         Assert.AreEqual(0, player.Units.Count());
+        BattleMech mech1 = new BattleMech("1", 1);
+
+        player.Units.Add(mech1);
      }
 }

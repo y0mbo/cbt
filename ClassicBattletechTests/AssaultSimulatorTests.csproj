@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassicBattletech\ClassicBattletech.csproj" />
+    <ProjectReference Include="..\ClassicBattletech\AssaultSimulator.csproj" />
   </ItemGroup>
 
   <ItemGroup>

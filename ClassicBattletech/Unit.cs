@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassicBattletech;
+namespace AssaultSimulator;
 
 public abstract class Unit
 {
@@ -15,5 +15,6 @@ public abstract class Unit
     public virtual string Designation { get; set; }
     // e.g. The White Hand
     public virtual string Callsign { get; set; }
-}
 
+    
+}

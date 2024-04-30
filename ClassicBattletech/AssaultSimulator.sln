@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicBattletech", "ClassicBattletech.csproj", "{D1EE7DE0-209C-4D58-914C-6C9E19232A35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssaultSimulator", "AssaultSimulator.csproj", "{D1EE7DE0-209C-4D58-914C-6C9E19232A35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicBattletechTests", "..\ClassicBattletechTests\ClassicBattletechTests.csproj", "{6380D5A0-5522-4CCF-800F-FD7A9DA1C646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssaultSimulatorTests", "..\ClassicBattletechTests\AssaultSimulatorTests.csproj", "{6380D5A0-5522-4CCF-800F-FD7A9DA1C646}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

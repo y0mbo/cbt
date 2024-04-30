@@ -1,6 +1,6 @@
-using ClassicBattletech;
+using AssaultSimulator;
 
-namespace ClassicBattletechTests;
+namespace AssaultSimulatorTests;
 
 [TestClass]
 public class BattleMechTests
